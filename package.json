@@ -1,0 +1,15 @@
+{
+  "name": "nitro-render",
+  "version": "0.0.1",
+  "type": "module",
+  "private": true,
+  "scripts": {
+    "prepare": "nitropack prepare",
+    "dev": "nitropack dev",
+    "build": "nitropack build",
+    "preview": "node .output/server/index.mjs"
+  },
+  "dependencies": {
+    "nitropack": "latest"
+  }
+}
