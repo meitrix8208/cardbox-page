@@ -45,7 +45,7 @@ export default eventHandler((event) => {
       `;
       for (const token of text.split(" ")) {
         write(token + " ");
-        await waitFor(25);
+        await waitFor(35);
       }
 
       controller.close();
