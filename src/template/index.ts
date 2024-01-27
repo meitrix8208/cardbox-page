@@ -51,7 +51,10 @@ export default eventHandler((event) => {
             </div>
             <footer class="mt-3 pt-3 border-t-2 text-[14px] font-475">
               <div class="font-italic">
-                Generated at ${new Date().toLocaleString()} with
+                Generated at ${new Date().toLocaleString("en-US", {
+                  hour12: false,
+                  hourCycle: "h24",
+                })} with
                 <br />
               </div>
               <div class="flex justify-center items-center">
