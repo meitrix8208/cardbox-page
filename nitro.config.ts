@@ -13,18 +13,6 @@ export default defineNitroConfig({
     gzip: true,
     brotli: true,
   },
-  routeRules: {
-    "https://rsms.me/inter/font-files/InterVariable.woff2?v=40": {
-      cache: {
-        maxAge: 60 * 60 * 24 * 365,
-      },
-    },
-    "https://rsms.me/inter/font-files/InterVariable-Italic.woff2?v=40": {
-      cache: {
-        maxAge: 60 * 60 * 24 * 365,
-      },
-    },
-  },
   publicAssets: [
     {
       baseURL: "/dist",

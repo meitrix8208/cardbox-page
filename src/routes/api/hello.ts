@@ -5,7 +5,7 @@ export default eventHandler((event) => {
     return { nitro: "Is Awesome!", isReal: true };
   }
   if (farewell?.bye === "true") {
-    return { 
+    return {
       GoodBye: "have a nice day!",
       nitro: "Is Awesome!",
     };
