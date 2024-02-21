@@ -49,6 +49,7 @@ export default eventHandler(() => {
     @font-face {
       font-family: "interVariable";
       src: url("/dist/InterVariable.woff2") format("woff2");
+      font-display: swap;
     }
   </style>
 </html>
