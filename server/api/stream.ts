@@ -17,7 +17,7 @@ export default eventHandler((event) => {
                 content="width=device-width, initial-scale=1.0"
               />
               <meta name="description" content="Nitro Streaming Demo" />
-              <link rel="icon" type="image/png" href="/favicon.png" />
+              <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
               <style>
                 :root {
                   font-family: Inter, sans-serif;

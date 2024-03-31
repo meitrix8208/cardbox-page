@@ -5,7 +5,7 @@ node_modules
 .output
 .env
 dist
-!src/public/dist
+!server/public/dist
 
 # Local Netlify folder
 .netlify
