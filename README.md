@@ -2,7 +2,7 @@
 
 <!-- img from favicon in the repo -->
 
-<img src="https://raw.githubusercontent.com/meitrix8208/nitro-render/main/src/public/favicon.svg" style="margin-left: auto; margin-right: auto; display: block; width: 80px; height: 80px;" alt="Nitro Logo" />
+<img src="https://raw.githubusercontent.com/meitrix8208/nitro-render/main/server/public/favicon.svg" style="margin-left: auto; margin-right: auto; display: block; width: 80px; height: 80px;" alt="Nitro Logo" />
 
 [![Netlify Status](https://api.netlify.com/api/v1/badges/7e7ed21c-8ec7-4267-a589-4748165c05f8/deploy-status)](https://app.netlify.com/sites/cardbox-prod/deploys)  
 
