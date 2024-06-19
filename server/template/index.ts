@@ -38,11 +38,11 @@ export default eventHandler((event) => {
             <ul>
               ${routes
                 .map(
-                  (link) => html`
+                  link => html`
                     <li>
                       <a href="${getURL(link)}" class="underline">${link}</a>
                     </li>
-                  `
+                  `,
                 )
                 .join("\n")}
             </ul>

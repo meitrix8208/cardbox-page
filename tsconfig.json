@@ -3,5 +3,6 @@
   "exclude": [
     "./server/public/**/*",
     "./dist/**/*",
+    "./eslint.config.mjs"
   ]
 }

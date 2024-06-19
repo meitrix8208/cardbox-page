@@ -9,13 +9,13 @@ export default eventHandler(async (event) => {
   });
   const host = getRequestHost(event, { xForwardedHost: true });
   const ip = await fetch("https://api.ipify.org?format=json")
-    .then((res) => res.json())
-    .then((res) => res.ip);
+    .then(res => res.json())
+    .then(res => res.ip);
 
   setResponseHeader(event, "Content-Type", "application/json");
   return {
-    ip: ip,
-    host: host,
+    ip,
+    host,
     method: event.method,
     path: event.path,
     userAgent: UserAgent,

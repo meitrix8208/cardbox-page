@@ -1,4 +1,5 @@
-export default eventHandler(() => {
+export default eventHandler((event) => {
+  setResponseHeader(event, "Content-Type", "text/html; charset=utf-8");
   const body = html`
 <!DOCTYPE html>
 <html lang="en">

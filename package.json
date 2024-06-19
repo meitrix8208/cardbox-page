@@ -1,15 +1,23 @@
 {
   "name": "nitro-render",
-  "version": "0.0.1",
   "type": "module",
+  "version": "0.0.1",
   "private": true,
+  "packageManager": "pnpm@9.4.0",
   "scripts": {
     "prepare": "nitropack prepare",
     "dev": "nitropack dev",
     "build": "nitropack build",
-    "preview": "node .output/server/index.mjs"
+    "preview": "node .output/server/index.mjs",
+    "lint": "eslint .",
+    "lint:fix": "eslint --fix ."
   },
   "dependencies": {
-    "nitropack": "latest"
+    "nitropack": "2.9.6"
+  },
+  "devDependencies": {
+    "@antfu/eslint-config": "2.21.1",
+    "eslint": "9.5.0",
+    "typescript": "5.4.5"
   }
 }

@@ -1,13 +1,14 @@
 export default eventHandler((event) => {
   const farewell = getQuery(event);
+  const response: Record<string, string | boolean> = {
+    nitro: "Is Awesome! 🚀",
+    isReal: true,
+  };
 
-  if (farewell === undefined || farewell?.bye !== "true") {
-    return { nitro: "Is Awesome!", isReal: true };
-  }
   if (farewell?.bye === "true") {
-    return {
-      GoodBye: "have a nice day!",
-      nitro: "Is Awesome!",
-    };
+    delete response.isReal;
+    response.GoodBye = "have a nice day! 👋";
   }
+
+  return response;
 });
