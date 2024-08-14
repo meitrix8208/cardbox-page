@@ -6,7 +6,6 @@ const nitroPkg = require("nitropack/package.json");
 export default defineNitroConfig({
   srcDir: "./server",
   renderer: "./server/template",
-  preset: "netlify-edge",
   runtimeConfig: {
     nitroVersion: nitroPkg.version,
   },
