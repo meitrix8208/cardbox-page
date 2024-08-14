@@ -8,11 +8,8 @@ export default eventHandler(async (event) => {
     ip: false,
   });
   const host = getRequestHost(event, { xForwardedHost: true });
-  const ip = await fetch("https://api.ipify.org?format=json")
-    .then(res => res.json())
-    .then(res => res.ip);
+  const ip = getRequestIP(event, { xForwardedFor: true });
 
-  setResponseHeader(event, "Content-Type", "application/json");
   return {
     ip,
     host,

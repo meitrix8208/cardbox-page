@@ -6,11 +6,13 @@ const nitroPkg = require("nitropack/package.json");
 export default defineNitroConfig({
   srcDir: "./server",
   renderer: "./server/template",
+  preset: "netlify-edge",
   runtimeConfig: {
     nitroVersion: nitroPkg.version,
   },
   compressPublicAssets: {
     gzip: true,
+    brotli: true,
   },
   publicAssets: [
     {
@@ -19,4 +21,7 @@ export default defineNitroConfig({
       maxAge: 60 * 60 * 24 * 30,
     },
   ],
+  experimental: {
+    openAPI: true,
+  },
 });
