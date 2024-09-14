@@ -24,7 +24,7 @@ export default eventHandler((event) => {
     un-cloak
     class="h-screen w-screen overflow-hidden"
   >
-    <main class="bg-black flex justify-center items-center h-100dvh">
+    <main class="bg-black flex justify-center items-center h-100vh">
       <section
         class="bg-yellow-500 text-black p-4 rounded-lg max-w-lg border border-white border-2xl border-4 outline-4px outline outline-offset-0 outline-red-500"
       >
