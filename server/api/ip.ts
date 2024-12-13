@@ -9,12 +9,15 @@ export default eventHandler(async (event) => {
   });
   const host = getRequestHost(event, { xForwardedHost: true });
   const ip = getRequestIP(event, { xForwardedFor: true });
-
+  const query = getQuery(event);
+  const headers = getRequestHeaders(event);
   return {
+    method: event.method,
     ip,
     host,
-    method: event.method,
-    path: event.path,
+    headers,
+    path: event.node.req.url,
     userAgent: UserAgent,
+    args: query,
   };
 });

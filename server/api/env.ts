@@ -1,5 +1,3 @@
-import process from "node:process";
-
 const tokenRe = /password|token|key|secret/i;
 function safeObj(env: Record<string, string> = {}) {
   return Object.fromEntries(

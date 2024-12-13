@@ -1,9 +1,9 @@
 {
-  "name": "nitro-render",
+  "name": "cardbox-page",
   "type": "module",
   "version": "0.0.1",
   "private": true,
-  "packageManager": "pnpm@9.7.0",
+  "packageManager": "pnpm@9.15.0",
   "scripts": {
     "prepare": "nitropack prepare",
     "dev": "nitropack dev",
@@ -13,11 +13,11 @@
     "lint:fix": "eslint --fix ."
   },
   "dependencies": {
-    "nitropack": "2.9.7"
+    "nitropack": "2.10.4"
   },
   "devDependencies": {
-    "@antfu/eslint-config": "2.25.1",
-    "eslint": "9.9.0",
-    "typescript": "5.5.4"
+    "@antfu/eslint-config": "3.11.2",
+    "eslint": "9.16.0",
+    "typescript": "5.7.2"
   }
 }
