@@ -3,7 +3,6 @@
   "type": "module",
   "version": "0.0.1",
   "private": true,
-  "packageManager": "pnpm@9.15.0",
   "scripts": {
     "prepare": "nitropack prepare",
     "dev": "nitropack dev",
@@ -13,11 +12,11 @@
     "lint:fix": "eslint --fix ."
   },
   "dependencies": {
-    "nitropack": "2.10.4"
+    "nitropack": "2.11.3"
   },
   "devDependencies": {
-    "@antfu/eslint-config": "3.11.2",
-    "eslint": "9.16.0",
-    "typescript": "5.7.2"
+    "@antfu/eslint-config": "4.6.0",
+    "eslint": "9.21.0",
+    "typescript": "5.8.2"
   }
 }
