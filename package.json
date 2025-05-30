@@ -12,11 +12,18 @@
     "lint:fix": "eslint --fix ."
   },
   "dependencies": {
-    "nitropack": "2.11.11"
+    "nitropack": "2.11.12"
   },
   "devDependencies": {
-    "@antfu/eslint-config": "4.13.0",
-    "eslint": "9.26.0",
+    "@antfu/eslint-config": "4.13.2",
+    "eslint": "9.27.0",
     "typescript": "5.8.3"
+  },
+  "pnpm": {
+    "onlyBuiltDependencies": [
+      "@parcel/watcher",
+      "esbuild",
+      "unrs-resolver"
+    ]
   }
 }
