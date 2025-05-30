@@ -2,10 +2,11 @@ import { Buffer } from "node:buffer";
 
 export default eventHandler(async (event) => {
   const host = getRequestHost(event, { xForwardedHost: true });
+  const protocol = getRequestProtocol(event, { xForwardedProto: true });
   const ip = getRequestIP(event, { xForwardedFor: true });
   const args = getQuery(event);
   const headers = getRequestHeaders(event);
-  const url = new URL(event.node.req.url, `http://${host}`);
+  const url = new URL(event.node.req.url, `${protocol}://${host}`);
   const path = event.path.split("?")[0];
   let geo = {};
   if (headers["x-nf-geo"]) {
