@@ -14,6 +14,8 @@ export default eventHandler((event) => {
       name="description"
       content="Nitro Test Deployment"
     />
+    <meta property="og:title" content="Nitro Test Deployment" />
+    <meta property="og:description" content="Nitro Test Deployment" />
     <meta property="og:image" content="https://n2o.infraforge.cc/favicon.svg" />
     <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
     <link rel="stylesheet" href="${getURL("/dist/uno.reset.css")}" />
