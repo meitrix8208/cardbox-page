@@ -14,6 +14,7 @@ export default eventHandler((event) => {
       name="description"
       content="Nitro Test Deployment"
     />
+    <meta property="og:image" content="https://n2o.infraforge.cc/favicon.svg" />
     <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
     <link rel="stylesheet" href="${getURL("/dist/uno.reset.css")}" />
     <script defer src="${getURL("/dist/uno.global.js")}"></script>
@@ -47,15 +48,25 @@ export default eventHandler((event) => {
                 .join("\n")}
             </ul>
           </div>
-          <footer class="mt-3 pt-3 border-t-2 text-[14px] font-475">
-            <div class="font-italic">
+          <footer class="mt-3 pt-2 border-t-2 text-[14px] font-475">
+            <div class="font-italic tracking-wider">
               Generated at ${new Date().toLocaleString("en-US", {
                 hour12: false,
                 hourCycle: "h24",
-              })} with
+              })}
               <br />
             </div>
-            <div class="flex justify-center items-center">
+            <div class="flex justify-center items-center mb--0.5 mt--0.5">
+              by
+              <a
+                href="https://github.com/meitrix8208"
+                class="px-1 underline font-bold"
+                target="_blank"
+                >Meitrix8208</a
+              >
+              using
+            </div>
+            <div class="flex justify-center items-center mb--2">
               <a
                 href="https://nitro.unjs.io/"
                 class="underline font-bold items-center flex"
