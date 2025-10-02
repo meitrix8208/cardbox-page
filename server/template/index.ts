@@ -14,9 +14,15 @@ export default eventHandler((event) => {
       name="description"
       content="Nitro Test Deployment"
     />
-    <meta property="og:title" content="Nitro Test Deployment" />
-    <meta property="og:description" content="Nitro Test Deployment" />
-    <meta property="og:image" content="https://n2o.infraforge.cc/og.png" />
+    <meta name="description" content="Nitro Test Deployment">
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:site" content="@meitrix8208">
+    <meta name="twitter:creator" content="@meitrix8208">
+    <meta name="twitter:title" content="Nitro Test Deployment">
+    <meta name="twitter:description" content="Nitro Test Deployment">
+    <meta name="twitter:image" content="https://cardbox-prod.netlify.app/og.pngs">
+    <meta name="twitter:image:alt" content="Nitro Test Deployment">
+    <meta name="og:image" content="https://cardbox-prod.netlify.app/og.pngs">
     <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
     <link rel="stylesheet" href="${getURL("/dist/uno.reset.css")}" />
     <script defer src="${getURL("/dist/uno.global.js")}"></script>
