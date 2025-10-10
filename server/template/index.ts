@@ -20,9 +20,9 @@ export default eventHandler((event) => {
     <meta name="twitter:creator" content="@meitrix8208">
     <meta name="twitter:title" content="Nitro Test Deployment">
     <meta name="twitter:description" content="Nitro Test Deployment">
-    <meta name="twitter:image" content="https://cardbox-prod.netlify.app/og.pngs">
+    <meta name="twitter:image" content="https://cardbox-prod.netlify.app/og.png">
     <meta name="twitter:image:alt" content="Nitro Test Deployment">
-    <meta name="og:image" content="https://cardbox-prod.netlify.app/og.pngs">
+    <meta name="og:image" content="https://cardbox-prod.netlify.app/og.png">
     <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
     <link rel="stylesheet" href="${getURL("/dist/uno.reset.css")}" />
     <script defer src="${getURL("/dist/uno.global.js")}"></script>
