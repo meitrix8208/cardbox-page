@@ -12,17 +12,26 @@ export default eventHandler((event) => {
     />
     <meta
       name="description"
-      content="Nitro Test Deployment"
+      content="Nitro Test Deployment - Next Generation Server Toolkit"
     />
-    <meta name="description" content="Nitro Test Deployment">
-    <meta name="twitter:card" content="summary_large_image">
-    <meta name="twitter:site" content="@meitrix8208">
-    <meta name="twitter:creator" content="@meitrix8208">
-    <meta name="twitter:title" content="Nitro Test Deployment">
-    <meta name="twitter:description" content="Nitro Test Deployment">
-    <meta name="twitter:image" content="https://n2o.infraforge.cc/og.png">
-    <meta name="twitter:image:alt" content="Nitro Test Deployment">
-    <meta name="og:image" content="https://n2o.infraforge.cc/og.png">
+    
+    <!-- Open Graph -->
+    <meta property="og:type" content="website" />
+    <meta property="og:url" content="https://n2o.infraforge.cc/" />
+    <meta property="og:title" content="Nitro Test Deployment" />
+    <meta property="og:description" content="Nitro Test Deployment - Next Generation Server Toolkit" />
+    <meta property="og:image" content="https://n2o.infraforge.cc/og.png" />
+    <meta property="og:image:alt" content="Nitro Test Deployment" />
+    
+    <!-- Twitter Card -->
+    <meta name="twitter:card" content="summary_large_image" />
+    <meta name="twitter:site" content="@meitrix8208" />
+    <meta name="twitter:creator" content="@meitrix8208" />
+    <meta name="twitter:title" content="Nitro Test Deployment" />
+    <meta name="twitter:description" content="Nitro Test Deployment - Next Generation Server Toolkit" />
+    <meta name="twitter:image" content="https://n2o.infraforge.cc/og.png" />
+    <meta name="twitter:image:alt" content="Nitro Test Deployment" />
+    
     <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
     <link rel="stylesheet" href="${getURL("/dist/uno.reset.css")}" />
     <script defer src="${getURL("/dist/uno.global.js")}"></script>
@@ -66,7 +75,7 @@ export default eventHandler((event) => {
             </div>
             <div class="flex justify-center items-center mb--0.5 mt--0.5">
               by
-              <a
+              
                 href="https://github.com/meitrix8208"
                 class="px-1 underline font-bold"
                 target="_blank"
@@ -75,7 +84,7 @@ export default eventHandler((event) => {
               using
             </div>
             <div class="flex justify-center items-center mb--2">
-              <a
+              
                 href="https://nitro.unjs.io/"
                 class="underline font-bold items-center flex"
                 target="_blank"
