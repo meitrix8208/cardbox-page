@@ -75,7 +75,7 @@ export default eventHandler((event) => {
             </div>
             <div class="flex justify-center items-center mb--0.5 mt--0.5">
               by
-              
+              <a
                 href="https://github.com/meitrix8208"
                 class="px-1 underline font-bold"
                 target="_blank"
@@ -84,7 +84,7 @@ export default eventHandler((event) => {
               using
             </div>
             <div class="flex justify-center items-center mb--2">
-              
+              <a
                 href="https://nitro.unjs.io/"
                 class="underline font-bold items-center flex"
                 target="_blank"
